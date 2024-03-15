@@ -1,0 +1,35 @@
+{
+  "name": "ramper",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf ./build",
+    "start": "node build/index.js",
+    "test": "ts-mocha -p tsconfig.json **/*.spec.ts --timeout 10000"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/server-destroy": "^1.0.3",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.490.0",
+    "@aws-sdk/credential-providers": "^3.490.0",
+    "@google-cloud/local-auth": "^3.0.1",
+    "@types/chai": "^4.3.11",
+    "@types/expect": "^24.3.0",
+    "@types/mocha": "^10.0.6",
+    "chai": "^4.4.0",
+    "dotenv": "^16.4.1",
+    "dropbox": "^10.34.0",
+    "form-data": "^4.0.0",
+    "google-auth-library": "^9.4.2",
+    "googleapis": "^131.0.0",
+    "rimraf": "^5.0.5",
+    "shamirs-secret-sharing-ts": "^1.0.2",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.2"
+  }
+}
